@@ -1,0 +1,31 @@
+/* App Container */
+.app-container {
+    display: flex;
+    min-height: 100vh; /* Ensures the layout spans full viewport height */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    flex-shrink: 0; /* Prevents shrinking */
+    width: 280px; /* Fixed width for sidebar */
+    min-height: 800px; /* Ensures sidebar has a minimum height */
+    background-color: #f8f9fa; /* Optional: background for sidebar */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for sidebar */
+  }
+  
+  /* Content Area */
+  .content-container {
+    flex-grow: 1; /* Allows content to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensures content spans the available width */
+    background-color: #ffffff; /* Optional: background for main content */
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1; /* Fills the space between Header and Footer */
+    padding: 20px;
+  }
+  
